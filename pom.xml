@@ -11,6 +11,7 @@
     <modules>
         <module>AbstractFactory</module>
         <module>Decorator</module>
+        <module>Composite</module>
     </modules>
 
 
