@@ -11,6 +11,7 @@ public class MyRemoteImpl implements MyRemote , Serializable {
     public static void main(String[] args) {
         /*
          * 将实现的服务注册到rmiRegistry
+         * 本文件编译后会自动产生stub类
          */
         try {
             MyRemote service=new MyRemoteImpl();

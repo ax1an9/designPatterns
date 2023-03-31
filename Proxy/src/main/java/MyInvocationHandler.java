@@ -38,6 +38,9 @@ public class MyInvocationHandler implements InvocationHandler {
 //            System.out.println("调用的是说话的方法");
 //            return  string ;
 //        }
+        /*
+        * 如果需要对方法的访问权限做限制，可以通过method的getName方法获得方法的名字，然后加以判断，是否进行invoke
+        * */
         // 在代理真实对象前我们可以添加一些自己的操作(AOP)
         System.out.println("Before method");
         System.out.println("Call Method: " + method);

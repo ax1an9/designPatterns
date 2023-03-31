@@ -7,8 +7,8 @@ import java.lang.reflect.Proxy;
  */
 public class Client {
     public static void main(String[] args) {
-        useDynamicProxy();
-        useStaticProxy();
+        useDynamicProxy();//而动态代理的对象是在运行时创建出来的
+        useStaticProxy();//static类在编译的时候已经创建
 
     }
 
@@ -20,6 +20,7 @@ public class Client {
         System.out.println(realSubject.hashCode());
         staticProxy.sellBooks();
         staticProxy.speak();
+        System.out.println(Proxy.isProxyClass(staticProxy.getClass()));//false
         System.out.println(staticProxy.hashCode());
     }
 
@@ -44,7 +45,7 @@ public class Client {
         subject.sellBooks();
 
         subject.speak();
-
+        System.out.println(Proxy.isProxyClass(subject.getClass()));//true
         System.out.println(subject.hashCode());
     }
 }
