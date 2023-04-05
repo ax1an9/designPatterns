@@ -13,6 +13,7 @@
         <module>Decorator</module>
         <module>Composite</module>
         <module>Singleton</module>
+        <module>Strategy</module>
     </modules>
 
 
