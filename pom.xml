@@ -14,6 +14,7 @@
         <module>Composite</module>
         <module>Singleton</module>
         <module>Strategy</module>
+        <module>ChainOfResponsibility</module>
     </modules>
 
 
